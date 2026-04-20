@@ -204,7 +204,7 @@
   </macro>
 
   <macro name="container-booklike">
-    <group delimiter="．">
+    <group delimiter=". ">
       <text macro="container-contributors"/>
       <choose>
         <if variable="container-title">
@@ -366,7 +366,7 @@
   </macro>
 
   <macro name="entry-layout">
-    <group delimiter="．">
+    <group delimiter=". ">
       <text macro="author"/>
       <choose>
         <if type="periodical">
@@ -388,7 +388,7 @@
         </else-if>
         <else-if type="chapter entry-dictionary entry-encyclopedia paper-conference" variable="container-title" match="any">
           <group delimiter="//">
-            <group delimiter="．">
+            <group delimiter=". ">
               <text macro="title"/>
               <text macro="secondary-contributors"/>
             </group>
@@ -417,16 +417,16 @@
     </layout>
   </citation>
 
-  <bibliography entry-spacing="0" et-al-min="4" et-al-use-first="3" second-field-align="flush">
+  <bibliography entry-spacing="0" et-al-min="4" et-al-use-first="3">
     <layout locale="en">
       <text variable="citation-number" prefix="[" suffix="]"/>
-      <group suffix="．">
+      <group suffix=".">
         <text macro="entry-layout"/>
       </group>
     </layout>
     <layout>
       <text variable="citation-number" prefix="[" suffix="]"/>
-      <group suffix="．">
+      <group suffix=".">
         <text macro="entry-layout"/>
       </group>
     </layout>
